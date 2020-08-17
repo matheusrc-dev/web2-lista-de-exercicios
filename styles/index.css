@@ -62,3 +62,7 @@ section h2 {
 ul li a {
     color: var(--color-link);
 }
+
+.source {
+    color: var(--color-link);
+}
