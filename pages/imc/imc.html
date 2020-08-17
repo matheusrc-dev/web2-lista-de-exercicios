@@ -9,7 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../../styles/index.css">
-    <link rel="stylesheet" href="triangle.css">
+    <link rel="stylesheet" href="imc.css">
     <title>Web 2 | Lista de Exercícios</title>
 </head>
 
@@ -26,25 +26,14 @@
     </header>
 
     <section>
-        <h2>Indique o valor dos 3 lados do triângulo</h2>
         <div class="fields">
-            <label for="side-one">Lado 1: </label>
-            <input type="number" name="side-one" id="side-one">
+            <button class = "generic-button" type="button" onclick="calcIMC()">Calcular IMC</button>
 
-            <label for="side-two">Lado 2: </label>
-            <input type="number" name="side-two" id="side-two">
-
-            <label for="side-three">Lado 3: </label>
-            <input type="number" name="side-three" id="side-three">
-
-            <button class = "generic-button" type="button" onclick="triangleType()">Tipo do triângulo</button>
             <div class="result"><p></p></div>
-        </div>
-
-        <a class="source" href="https://github.com/mat-zip/web2-lista-de-exercicios/blob/master/pages/triangle/triangle.js">SOURCE CODE</a>
+        <a class="source" href="">SOURCE CODE</a>
     </section>
 
-    <script src="triangle.js"></script>
+    <script src="imc.js"></script>
 </body>
 
 </html>
