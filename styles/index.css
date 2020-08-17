@@ -38,8 +38,8 @@ nav a .utf-logo {
 }
 
 section {
-    margin: 32px 7.5rem;
-    padding: 10px 20px 20px;
+    margin: 32px 4.5rem;
+    padding: 10px 15px 20px;
     border: solid 1px var(--color-box-opacity);
     border-radius: 4px;
 
@@ -65,4 +65,15 @@ ul li a {
 
 .source {
     color: var(--color-link);
+}
+
+@media (max-width: 500px) {
+    :root {
+        font-size: 80%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
 }
