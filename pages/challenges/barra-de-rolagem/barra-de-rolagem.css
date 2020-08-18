@@ -1,0 +1,24 @@
+p {
+    text-indent: 50px;
+    font-size: 1.5rem;
+}
+
+.source {
+    display: block;
+    text-align: center;
+}
+
+.generic-button {
+    background-color: rgb(88, 88, 88) ;
+    border: none;
+    color: var(--color-secondary);
+    padding: 16px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 16px 0 32px 0;
+    transition: background 0.2s;
+}
+
+.generic-button:hover {
+    background: rgb(48, 48, 48);
+}
