@@ -25,6 +25,5 @@ function ehAprovado(calcularMedia, calcularPercentagemFrequencia) {
         result.innerHTML = `aluno REPROVADO `;
     }
 
-    result.innerHTML += `Media final: ${media} Frequencia: ${percentagemFrequencia * 100}%`;
-
+    result.innerHTML += `Media final: ${media.toFixed(1)} Frequencia: ${(percentagemFrequencia * 100).toFixed(1)}%`;
 }
