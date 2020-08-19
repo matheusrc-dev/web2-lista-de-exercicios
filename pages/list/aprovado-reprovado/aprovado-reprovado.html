@@ -9,8 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../../../styles/index.css">
-    <link rel="stylesheet" href="fim-do-mundo.css">
-    <title>Web 2 | Desafio</title>
+    <link rel="stylesheet" href="aprovado-reprovado.css">
+    <title>Web 2 | Lista de Exercícios</title>
 </head>
 
 <body>
@@ -27,18 +27,22 @@
 
     <section>
         <div class="fields">
-            <button class = "generic-button" type="button" onclick="startConcurso()">Iniciar Concurso</button>
-
+            <label for="nota1">Nota 1</label>
+            <input type="number" name="nota1" id="nota1">
+            <label for="nota2">Nota 2</label>
+            <input type="number" name="nota2" id="nota2">
+            <label for="aulas">Numero de Aulas</label>
+            <input type="number" name="aulas" id="aulas">
+            <label for="freq">Frequência</label>
+            <input type="number" name="freq" id="freq">
+            <button class = "generic-button" type="button" onclick="ehAprovado()">Situação do Aluno</button>
             <div class="result"><p></p></div> 
             <br>
-            <button class = "generic-button premio" type="button" onclick="premio()" hidden>Prêmio!!!!!!</button>
-            <br>
-            <a class="source" href="https://github.com/mat-zip/web2-lista-de-exercicios/tree/master/pages/challenges/fim-do-mundo">SOURCE CODE</a>
-
+            <a class="source" href="">SOURCE CODE</a>
         </div>
         </section>
 
-    <script src="fim-do-mundo.js"></script>
+    <script src="aprovado-reprovado.js"></script>
 </body>
 
 </html>
