@@ -1,0 +1,13 @@
+section {
+    text-align: center;
+}
+
+section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .content .alf-crescente {
+    margin-left: 90px;
+}
