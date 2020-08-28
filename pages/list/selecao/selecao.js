@@ -30,10 +30,14 @@ let exibir = (selecao, jogadores) => {
 
     substituir = () => {
         let nome = window.prompt("Nome do jogador a ser substituido");
-        let novoNome = window.prompt("Novo nome do integrante");
+        if(selecao.indexOf(nome) == -1) {
+            window.alert("#ERRO:Nome não existe na lista, tente novamente#");
+        } else {
+            let novoNome = window.prompt("Novo nome do integrante");
 
-        selecao.splice(selecao.indexOf(nome), 1, novoNome);
-        exibir(selecao, jogadores);
+            selecao.splice(selecao.indexOf(nome), 1, novoNome);
+            exibir(selecao, jogadores);
+        }
     }
 
 })(exibir);
