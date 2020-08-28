@@ -1,0 +1,14 @@
+.fields .jogadores {
+    margin: 16px 8.6rem;
+    text-align: initial;
+}
+
+#submit {
+    width: 100px;
+}
+
+@media(max-width: 480px) {
+    .fields .jogadores {
+        margin: 16px 1.6rem;
+    }
+}
