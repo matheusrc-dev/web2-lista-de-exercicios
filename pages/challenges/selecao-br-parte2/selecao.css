@@ -1,0 +1,20 @@
+.generic-button {
+    width: 16rem;;
+}
+
+.fields {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.times {
+    margin: auto;
+    text-align: initial;
+}
+
+.time1, .time2 {
+    list-style-position: inside;
+}
+
+
+
