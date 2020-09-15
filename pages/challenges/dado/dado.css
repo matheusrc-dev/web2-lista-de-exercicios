@@ -1,0 +1,19 @@
+#div-botao {
+    background-color: beige;
+    height: 60px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#div-resultado {
+    height: 40px;
+    width: 40px;
+    border: 3px solid;
+    padding: 30px 50px 55px 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 32px;
+    display: none;
+}

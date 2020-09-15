@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Endereço</title>
+
+</head>
+
+<body>
+	Encontra o endereço a partir do CEP?
+	<form onsubmit="return validador()">
+		<p>
+			<label for="input-cep">Digite o CEP:</label>
+			<input id="input-cep" type="text">
+		</p>
+		<p>
+			<label for="input-endereco">Endereço:</label>
+			<input id="input-endereco" type="text" disabled>
+		</p>
+		<button type="submit" disabled>Enviar</button>
+	</form>
+	<script>
+		//definição de um Map
+		var enderecosPorCepMap = new Map();
+		enderecosPorCepMap.set("85000-000", "Rua Paraná, Guarapuava - PR");
+		enderecosPorCepMap.set("85001-000", "Rua Santa Catarina, Guarapuava - PR");
+		enderecosPorCepMap.set("85201-000", "Rua Bahia, Guarapuava - PR");
+
+		document.querySelector("#input-cep").TIPO_EVENTO = function () {
+			var cep = document.querySelector("#input-cep").value;
+			//busca de um endereço pelo CEP na Map
+			var endereco = enderecosPorCepMap.get(cep);
+
+			//TODO caso endereço não seja undefined, apresentar o endereço no campo correspondente
+		}
+
+		/**
+			Verifica se os dois campos estão preenchidos e então simula o envio dos dados ao servidor. Ou seja, se estiverem preenchidos, um alert é apresentado informando que os dados foram enviados com sucesso ao servidor. 
+		*/
+		function validador() {
+			//TODO
+
+			return false;
+		}
+	</script>
+</body>
+
+</html>
