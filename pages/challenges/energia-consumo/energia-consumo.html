@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/index.css">
+    <link rel="stylesheet" href="../../../styles/fields.css">
+    <link rel="stylesheet" href="energia.css">
+    <title>Web 2 | Desafio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="http://portal.utfpr.edu.br/" target="_blank"><img class="utf-logo"
+                    src="../../../img/utfpr-logo.png" alt="UTFPR Logo"></a>
+            <div class="links">
+                <a class="menu-item" href="../../../index.html">Home</a>
+                <a class="menu-item" href="https://github.com/mat-zip" target="_blank">GitHub</a>
+                <a class="menu-item" href="https://www.linkedin.com/in/mat-/" target="_blank">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Preencha os dados para calucar a conta de consumo de energia</h2>
+        <form action="" onsubmit="return calculaConsumo()" id = "form">
+            <label for="">Quantidade de Kwh consumidos</label>
+            <input type="text" name="qtd-kwh" id="qtd-kwh" onblur="trataEntrada('qtd-kwh')" required>
+            <label for="">Valor unitário do Kwh</label>
+            <input type="text" name="value-kwh" id="value-kwh" onblur="trataEntrada('value-kwh')" required>
+            <span id="erro"></span>
+            <button class="generic-button" type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+
+
+        <a class="source" href="https://github.com/mat-zip/web2-lista-de-exercicios/tree/master/pages/challenges/energia-consumo">SOURCE CODE</a>
+    </section>
+
+    <script src="energia-consumo.js"></script>
+</body>
+
+</html>
