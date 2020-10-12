@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Página Inicial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+</head>
+
+<body>
+
+    <!-- menu -->
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper yellow accent-4">
+                    <div class="container">
+                        <a class="brand-logo" href="../../../index.html">
+                            <img class="circle my-logo" src="./assets/resources/images/course.png">
+                        </a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#container-professor" class="flow-text black-text">Professores</a></li>
+                            <li><a href="#container-disciplina" class="flow-text black-text">Disciplinas</a></li>
+                            <li><a href="#container-aluno" class="flow-text black-text">Alunos</a></li>
+                        </ul>
+                        <ul class="side-nav green lighten-1" id="mobile-demo">
+                            <div class="row">
+                                <div class="col s8 offset-s2">
+                                    <div class="center">
+                                        <img class="circle responsive-img" src="./assets/resources/images/course.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- fim menu -->
+
+    <!-- container -->
+    <main>
+        <div class="container">
+            <div class="row my-header">
+                <div class="col s12 center-align">
+                    <img src="assets/resources/images/utfpr.jpg" class=" img-responsive " height="100px">
+                </div>
+            </div>
+            <!-- mensagem -->
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel yellow my-hide-message" id="panel-message-professor">
+                        <span class="black-text">Cadastrado com sucesso!!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- fim mensagem -->
+            <!-- professor -->
+            <div class="row" id="container-professor">
+                <div class="col s12">
+                    <h3>Professor (<span id='span-professor'></span> cadastros)</h3>
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-name" type="text" class="validate">
+                                <label for="input-name">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-course" type="text" class="validate">
+                                <label for="input-course">Curso</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 m6">
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="submit" name="action">Cadastrar<i class="material-icons right ">send</i></button>
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="reset" name="action">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- fim professor -->
+            <!-- mensagem -->
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel yellow my-hide-message" id="panel-message-subject">
+                        <span class="black-text">Cadastrado com sucesso!!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- disciplinas -->
+            <div class="row" id="container-disciplina">
+                <div class="col s12">
+                    <h3>Disciplina</h3>
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select id="select-professor" required>
+                                    <option value="" disabled selected>Selecione</option>
+                                </select>
+                                <label>Professor</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-name-subject" type="text" class="validate" placeholder="WEB II">
+                                <label for="input-name-subject">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <select id="select-day-week">
+                                   <option value="" disabled selected>Selecione</option>
+                                   <option value="1">Segunda-feira</option>
+                                   <option value="2">Terça-feira</option>
+                                   <option value="3">Quarta-feira</option>
+                                   <option value="4">Quinta-feira</option>
+                                   <option value="5">Sexta-feira</option>
+                                   <option value="6">Sábado</option>
+                               </select>
+                                <label>Dia da Semana</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-hour-init" type="text" class="validate" placeholder="19">
+                                <label for="input-hour-init">Hora de Início</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="submit" id="button-subject">Cadastrar<i class="material-icons right ">send</i></button>
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="reset" name="action">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- fim disciplinas -->
+            <!-- mensagem -->
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel yellow my-hide-message" id="panel-message-student">
+                        <span class="black-text">Cadastrado com sucesso!!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- alunos -->
+            <div class="row" id="container-aluno">
+                <div class="col s12">
+                    <h3>Aluno</h3>
+                    <form action="">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <div id="checkbox-group-subject">
+                                    <!--
+                                    <p>
+                                        <input type="checkbox" id="test5" />
+                                        <label for="test5">Red</label>
+                                    </p>
+                                    -->
+                                </div>
+                                <label for="disciplinas" class="active">Disciplina</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-ra" type="number" class="validate">
+                                <label for="input-ra" class="active">Número do Registro Acadêmico (RA)</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="input-name-student" type="text" class="validate">
+                                <label for="input-name-student">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="submit" name="action">Cadastrar<i class="material-icons right ">send</i></button>
+                                <button class="btn waves-effect waves-light yellow accent-4 black-text" type="reset" name="action">Limpar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- fim alunos -->
+            <!-- relatório -->
+            <div class="row">
+
+                <button class="btn waves-effect waves-light yellow darken-4 black-text col s12" type="button" id="button-report">Mostrar Relatório</button>
+
+            </div>
+            <div id="container-report">
+                <!-- 
+                <h5>Professor</h5>
+                <ul class="collection">
+                    <li class="collection-item active">Alvin</li>
+                </ul>
+                <h5>Disciplinas</h5>
+                <ul class="collection">
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                    <li class="collection-item">Alvin</li>
+                </ul>
+                -->
+            </div>
+        </div>
+        <!-- fim container-->
+    </main>
+    <!-- fim container -->
+
+    <!-- rodape-->
+    <footer class="page-footer yellow accent-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a href="http://www.utfpr.edu.br/guarapuava">
+                        <img src="assets/resources/images/utfpr3.png" id="utfpr-footer" class=" img-responsive" height="70px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+    <!-- rodapé -->
+
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <script src="assets/resources/scripts/common.js"></script>
+
+</body>
+
+</html>
