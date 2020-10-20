@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WEB II</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/resources/styles/style.css">
+
+    <script src="assets/libraries/jquery/jquery-2.2.4.min.js"></script>
+    <script src="assets/libraries/materialize/js/materialize.js"></script>
+    <script src="assets/resources/scripts/common.js"></script>
+
+
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+            $("#menu").load("menu.html");
+        });
+    </script>
+</head>
+
+<body>
+    <div id="menu"></div>
+    <!-- container -->
+    <main>
+        <div class="container about">
+            <h5>Chuck Norris Facts</h5>
+            <h6>Descubra coisas incríveis sobre Chuck</h6>
+            <hr>
+            <!-- linha -->
+            <div class="row">
+                <div class="col s12 center">
+                    <img src="assets/resources/images/chuck.jpg" height="200px" />
+                </div>
+                <div class="col s12 flow-text my-panel-content">
+                    <p>Crie um script para cadastrar verdades absolutas (facts) sobre Chuck Norris em um vetor/array e
+                        tamb&eacute;m apresentar uma verdade absoluta aleat&oacute;ria j&aacute; cadastrada ao passar o
+                        mouse sobre a sua imagem. Quando o mouse &eacute; movido para fora da imagem, o texto com a
+                        verdade absoluta deve ser escondido. A apresenta&ccedil;&atilde;o e omiss&atilde;o do painel que
+                        cont&eacute;m a verdade absoluta sorteada deve ser realizada via aplica&ccedil;&atilde;o
+                        din&acirc;mica de estilo CSS via JavaScript. Basicamente, a p&aacute;gina deve conter um
+                        textarea para inserir o texto do fact, um bot&atilde;o para acionar o evento para guardar o fact
+                        em um vetor, uma imagem de Chuck e o container para mostrar o fact sorteado.</p>
+                    <p class="my-subtitle">
+                        Exemplos de Facts:
+                    </p>
+                    <ul class="browser-default">
+                        <li>“Chuck Norris contou até o infinito. Foram duas vezes.”</li>
+                        <li>“Não há o botão ‘ctrl’ no computador de Chuck, uma vez que ele sempre está sobre o
+                            controle.”</li>
+                        <li>“Chuck destruiu a tabela periódica porque o único elemento que ele conhece é o elemento
+                            surpresa.”</li>
+                    </ul>
+                    <p class="my-subtitle">
+                        Exigências
+                    </p>
+                    <ul class="browser-default">
+                        <li><strong>Ao carregar a aplica&ccedil;&atilde;o, atribuir foco no textarea</strong> para
+                            facilitar a inser&ccedil;&atilde;o de facts.</li>
+                        <li>Ao clicar no bot&atilde;o para adicionar um item no array, <strong>apagar o conte&uacute;do
+                                do textarea e atribuir foco ao mesmo</strong> elemento para facilitar a pr&oacute;xima
+                            inser&ccedil;&atilde;o. Ao clicar, o evento de <strong>submit deve ser disparado</strong>.
+                            Ao cadastrar o fact, apresentar a <strong>mensagem de sucesso em um alert</strong>.</li>
+                        <li><strong>Validar o campo de textarea via atributo do HTML5 para que este seja
+                                obrigat&oacute;rio</strong>, ou seja, n&atilde;o permita o envio de espa&ccedil;o vazio
+                            ao clicar em adicionar.</li>
+                        <ul class="browser-default">
+                            <li>Neste caso, <strong>mostrar a seguinte mensagem customizada</strong> dentro do
+                                &lsquo;bal&atilde;o&rsquo; de erro renderizado pelo navegador: Chuck Norris sabe o valor
+                                de uma vari&aacute;vel nula e ainda pode ordenar por este valor, mas ele n&atilde;o
+                                aceita valores vazios. Favor preencher.</li>
+                        </ul>
+                        <li>Adicionar cada novo fact no final do array usando a fun&ccedil;&atilde;o apropriada para
+                            manipula&ccedil;&atilde;o do array.</li>
+                        <li>Ao passar o mouse sobre a imagem, mostrar um fact aleat&oacute;rio. Usar o oposto deste
+                            estilo para esconder o fact quando o cursor &eacute; removido da imagem. Usar uma
+                            fun&ccedil;&atilde;o rand&ocirc;mica limitada ao tamanho do vetor para sortear o
+                            &iacute;ndice do fact a ser apresentado.</li>
+                    </ul>
+
+
+                </div>
+                <hr>
+                <div class="col s12">
+                    <h5>Cadastro de Facts</h5>
+                </div>
+                <form id="form-fact" class="col s12 m6" onsubmit="return factValidation()">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea autofocus required id="textarea-fact" class="materialize-textarea"
+                                placeholder="Chuck Norris consegue fazer limonadas de suas maças."></textarea>
+                            <label for="textarea-fact">Cadastre um no fact</label>
+                        </div>
+                    </div>
+                    <button id="button-fact" class="btn waves-effect waves-light" type="submit">Adicionar</button>
+                </form>
+                <div class="col s12 m6 center">
+                    <img id="img-chuck" src="assets/resources/images/chuck.jpg" height="300px" />
+                    <p id="p-chuck-fact" class="card-panel white-text grey darken-2" ></p>
+
+                </div>
+            </div>
+            <!-- fim linha -->
+        </div>
+    </main>
+    <!-- fim container -->
+    <div id="footer"></div>
+    <script src="assets/resources/scripts/questao-1.js"></script>
+</body>
+
+</html>
